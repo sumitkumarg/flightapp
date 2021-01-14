@@ -1,0 +1,81 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+}
+
+#calc {
+    width: 320px;
+    height: 470px;
+    padding: 0;
+    margin: 0 auto;
+    border: 1px solid #616c63;
+    background-color: #000;
+}
+
+#screen {
+    width: 320px;
+    height: 170px
+}
+
+button:focus {
+    outline: 0;
+}
+
+.btn-first-row {
+    border-top: 1px solid #191919 !important;
+    background: #000;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+}
+
+.btn-first-row:hover {
+    background: #191919;
+}
+
+.btn-first-row:active {
+    background: #333333;
+}
+
+.btn-op {
+    font-size: 32px;
+    font-weight: 100;
+}
+
+.btn-main {
+    background: #1F1F1F;
+}
+
+.btn-main:hover {
+    background: #353535;
+}
+
+.btn-main:active {
+    background: #4C4C4C;
+}
+
+.btn-pad {
+    width: 80px;
+    height: 50px;
+    margin: 0px;
+    padding: 0;
+    border: none;
+    float: left;
+    font-family: Segoe UI;
+    color: #FFF;
+    /*text-decoration: none;*/
+}
+
+.btn-num {
+    font-size: 22px;
+    font-weight: 600; 
+}
+
+.btn-other {
+    font-weight: 400;
+}
+
+.btn-whatfuckingever {
+    font-size: 22px;
+    font-weight: 300;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="calculator.css">
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+    <!--
+Really crappy calculator based on Windows 10's app. Still a lot to do. Lots of potential.
+-->
+
+    <div id="calc">
+        <div id="screen">History + Numbers lol
+            <p id="temp" style="color: white; font-size: 50px;text-align: right;margin: 20px;">0</p>
+        </div>
+        <div id="buttons">
+            <button id="percent" class="btn-pad btn-first-row btn-op">%</button>
+            <button id="sqroot" class="btn-pad btn-first-row btn-op">√</button>
+            <button id="square" class="btn-pad btn-first-row btn-op">𝒙<sup>2</sup></button>
+            <button id="inverse" class="btn-pad btn-first-row btn-op"><sup>1</sup>/<sub>𝒙</sub></button>
+            <button onclick="clearScr()" class="btn-pad btn-main btn-other">CE</button>
+            <button onclick="resetInput()" class="btn-pad btn-main btn-other">C</button>
+            <button onclick="backspace()" class="btn-pad btn-main btn-other">⌫</button>
+            <button id="divide" class="btn-pad btn-main btn-op">÷</button>
+            <button class="btn-pad btn-main btn-num">7</button>
+            <button class="btn-pad btn-main btn-num">8</button>
+            <button class="btn-pad btn-main btn-num">9</button>
+            <button id="multiply" class="btn-pad btn-main btn-op">×</button>
+            <button class="btn-pad btn-main btn-num">4</button>
+            <button class="btn-pad btn-main btn-num">5</button>
+            <button class="btn-pad btn-main btn-num">6</button>
+            <button id="subs" class="btn-pad btn-main btn-op">−</button>
+            <button class="btn-pad btn-main btn-num">1</button>
+            <button class="btn-pad btn-main btn-num">2</button>
+            <button class="btn-pad btn-main btn-num">3</button>
+            <button id="sum" class="btn-pad btn-main btn-op">+</button>
+            <button onclick="plusminus()" class="btn-pad btn-main btn-whatfuckingever">±</button>
+            <button class="btn-pad btn-main btn-num">0</button>
+            <button class="btn-pad btn-main btn-num">.</button>
+            <button id="solve" class="btn-pad btn-main btn-op">=</button>
+        </div>
+    </div>
+    
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
+    <script src="calculator.js"></script> 
+</body>
+
+</html>
