@@ -1,0 +1,82 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn install --force
+
+PATH: 
+  /Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.17.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: https://sumitkumarg.github.io/flightapp: Request failed "404 Not Found"
+      at ResponseError.ExtendableBuiltin (/usr/local/lib/node_modules/yarn/lib/cli.js:696:66)
+      at new ResponseError (/usr/local/lib/node_modules/yarn/lib/cli.js:802:124)
+      at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:66215:16)
+      at Request.emit (node:events:514:28)
+      at module.exports.Request.onRequestResponse (/usr/local/lib/node_modules/yarn/lib/cli.js:141767:10)
+      at ClientRequest.emit (node:events:514:28)
+      at HTTPParser.parserOnIncomingClient (node:_http_client:700:27)
+      at HTTPParser.parserOnHeadersComplete (node:_http_common:119:17)
+      at TLSSocket.socketOnData (node:_http_client:541:22)
+      at TLSSocket.emit (node:events:514:28)
+
+npm manifest: 
+  {
+    "name": "flightapp",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "@testing-library/jest-dom": "^5.11.4",
+      "@testing-library/react": "^11.1.0",
+      "@testing-library/user-event": "^12.1.10",
+      "bootstrap": "^5.0.0-alpha1",
+      "gh-pages": "^3.1.0",
+      "homepage": "https://sumitkumarg.github.io/flightapp",
+      "node-latest-version": "^1.0.16",
+      "npm": "^6.14.11",
+      "react": "^17.0.1",
+      "react-dom": "^17.0.1",
+      "react-router-dom": "^5.2.0",
+      "react-scripts": "4.0.1",
+      "reactstrap": "^8.8.1",
+      "web-vitals": "^0.2.4"
+    },
+    "scripts": {
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -d build",
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+      "extends": [
+        "react-app",
+        "react-app/jest"
+      ]
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
